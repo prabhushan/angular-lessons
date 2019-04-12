@@ -1,0 +1,12 @@
+<div style="background-color:antiquewhite">
+    <h2>This is child page</h2>
+
+<div [style.color]="testcolor" >{{displayTextChanged}}</div>
+<div *ngIf=blog>
+<div>Author: {{blog.author}}</div>
+<div>Title: {{blog.title}}</div>
+<div>Content : {{blog.content}}</div>
+<div *ngIf=blog.displayImage>Display : {{blog.displayImage}}</div>
+
+</div>
+</div>

@@ -1,0 +1,12 @@
+ <div style="background-color: aqua">
+<h1>This from parent</h1>
+
+<div [style.color]="testcolor" >{{title}}</div>
+<div>Author: {{blog.author}}</div>
+<div>Title: {{blog.title}}</div>
+<div>Content : {{blog.content}}</div>
+<div *ngIf=blog.displayImage>Display : {{blog.displayImage}}</div>
+<a [routerLink] = "['/landing/blog']">Click here for Child page</a>
+<router-outlet></router-outlet>
+<!-- <app-bloglist [(displayText)]=title [(blog)]=blog [(testcolor)]=testcolor></app-bloglist> -->
+</div> 
